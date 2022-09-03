@@ -1,0 +1,7 @@
+{
+  "imports": {
+    "@/": "./src/",
+    "http/": "https://deno.land/std@0.154.0/http/",
+    "hono/": "https://deno.land/x/hono@v2.1.3/"
+  }
+}
