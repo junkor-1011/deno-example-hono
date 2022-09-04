@@ -5,5 +5,5 @@
  */
 export const nowDatetimeISOString = (): string => {
   const now = new Date();
-  return now.toISOString()
-}
+  return now.toISOString();
+};

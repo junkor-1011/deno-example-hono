@@ -4,7 +4,7 @@ import { z } from 'zod';
  * response model base.
  */
 export const schemaResponseBase = z.object({
-	message: z.string().max(30),
+  message: z.string().max(30),
 });
 
 /**
