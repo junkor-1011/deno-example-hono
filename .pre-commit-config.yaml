@@ -1,17 +1,25 @@
 repos:
   - repo: local
     hooks:
-      - id: pre-commit-lint
-        name: pre-commit-lint
+      - id: deno-lint
+        name: deno-lint
         entry: deno lint
         language: system
         stages: [commit]
         pass_filenames: false
         types_or: [javascript, jsx, ts, tsx, json, markdown]
         verbose: true
-      - id: pre-commit-fmt
-        name: pre-commit-fmt
+      - id: deno-fmt
+        name: deno-fmt
         entry: deno fmt
+        language: system
+        stages: [commit]
+        pass_filenames: false
+        types_or: [javascript, jsx, ts, tsx]
+        verbose: true
+      - id: deno-test
+        name: deno-test
+        entry: deno test
         language: system
         stages: [commit]
         pass_filenames: false
